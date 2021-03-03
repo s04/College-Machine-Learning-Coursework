@@ -1,0 +1,122 @@
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 32, 32, 16)        448       
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 16, 16, 16)        2320      
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 16, 16, 32)        4640      
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 8, 8, 32)          9248      
+_________________________________________________________________
+dropout (Dropout)            (None, 8, 8, 32)          0         
+_________________________________________________________________
+flatten (Flatten)            (None, 2048)              0         
+_________________________________________________________________
+dense (Dense)                (None, 10)                20490     
+=================================================================
+Total params: 37,146
+Trainable params: 37,146
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/20
+282/282 [==============================] - 14s 50ms/step - loss: 1.8141 - accuracy: 0.3581 - val_loss: 1.5890 - val_accuracy: 0.4467
+Epoch 2/20
+282/282 [==============================] - 13s 46ms/step - loss: 1.5481 - accuracy: 0.4605 - val_loss: 1.4359 - val_accuracy: 0.5082
+Epoch 3/20
+282/282 [==============================] - 13s 46ms/step - loss: 1.4154 - accuracy: 0.5145 - val_loss: 1.3683 - val_accuracy: 0.5387
+Epoch 4/20
+282/282 [==============================] - 13s 46ms/step - loss: 1.3403 - accuracy: 0.5413 - val_loss: 1.2839 - val_accuracy: 0.5720
+Epoch 5/20
+282/282 [==============================] - 13s 48ms/step - loss: 1.2875 - accuracy: 0.5657 - val_loss: 1.2491 - val_accuracy: 0.5845
+Epoch 6/20
+282/282 [==============================] - 14s 49ms/step - loss: 1.2455 - accuracy: 0.5791 - val_loss: 1.2485 - val_accuracy: 0.5865
+Epoch 7/20
+282/282 [==============================] - 15s 52ms/step - loss: 1.2203 - accuracy: 0.5904 - val_loss: 1.2465 - val_accuracy: 0.5897
+Epoch 8/20
+282/282 [==============================] - 14s 51ms/step - loss: 1.1830 - accuracy: 0.6045 - val_loss: 1.1745 - val_accuracy: 0.6215
+Epoch 9/20
+282/282 [==============================] - 14s 51ms/step - loss: 1.1625 - accuracy: 0.6144 - val_loss: 1.1380 - val_accuracy: 0.6320
+Epoch 10/20
+282/282 [==============================] - 16s 55ms/step - loss: 1.1390 - accuracy: 0.6234 - val_loss: 1.1122 - val_accuracy: 0.6370
+Epoch 11/20
+282/282 [==============================] - 14s 51ms/step - loss: 1.1199 - accuracy: 0.6318 - val_loss: 1.0924 - val_accuracy: 0.6470
+Epoch 12/20
+282/282 [==============================] - 14s 48ms/step - loss: 1.0928 - accuracy: 0.6417 - val_loss: 1.0865 - val_accuracy: 0.6528
+Epoch 13/20
+282/282 [==============================] - 14s 48ms/step - loss: 1.0848 - accuracy: 0.6429 - val_loss: 1.0807 - val_accuracy: 0.6570
+Epoch 14/20
+282/282 [==============================] - 13s 48ms/step - loss: 1.0625 - accuracy: 0.6505 - val_loss: 1.0879 - val_accuracy: 0.6515
+Epoch 15/20
+282/282 [==============================] - 13s 48ms/step - loss: 1.0518 - accuracy: 0.6574 - val_loss: 1.0301 - val_accuracy: 0.6770
+Epoch 16/20
+282/282 [==============================] - 14s 49ms/step - loss: 1.0338 - accuracy: 0.6640 - val_loss: 1.0015 - val_accuracy: 0.6777
+Epoch 17/20
+282/282 [==============================] - 13s 47ms/step - loss: 1.0259 - accuracy: 0.6665 - val_loss: 1.0008 - val_accuracy: 0.6765
+Epoch 18/20
+282/282 [==============================] - 13s 47ms/step - loss: 1.0102 - accuracy: 0.6709 - val_loss: 0.9832 - val_accuracy: 0.6933
+Epoch 19/20
+282/282 [==============================] - 13s 47ms/step - loss: 1.0017 - accuracy: 0.6794 - val_loss: 1.0025 - val_accuracy: 0.6870
+Epoch 20/20
+282/282 [==============================] - 13s 47ms/step - loss: 0.9826 - accuracy: 0.6834 - val_loss: 0.9773 - val_accuracy: 0.6985
+WARNING:tensorflow:From /home/zeno/anaconda3/lib/python3.8/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2020-12-10 13:52:22.546026: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /home/zeno/anaconda3/lib/python3.8/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+              precision    recall  f1-score   support
+
+           0       0.77      0.75      0.76      3986
+           1       0.82      0.89      0.85      3986
+           2       0.61      0.66      0.63      4048
+           3       0.63      0.55      0.58      3984
+           4       0.60      0.76      0.67      4003
+           5       0.76      0.56      0.64      3975
+           6       0.80      0.79      0.80      4019
+           7       0.73      0.82      0.77      4023
+           8       0.82      0.84      0.83      3997
+           9       0.89      0.75      0.82      3978
+
+    accuracy                           0.74     39999
+   macro avg       0.74      0.74      0.74     39999
+weighted avg       0.74      0.74      0.74     39999
+
+[[3004   79  265   48   95   17   11   67  313   87]
+ [  77 3532   42   23   14    7   29   17  107  138]
+ [ 210   22 2672  138  490   91  173  159   76   17]
+ [  53   32  342 2184  411  384  277  217   60   24]
+ [  86   15  233  118 3062   33  117  303   25   11]
+ [  13   21  285  602  362 2207  108  333   26   18]
+ [  17   39  233  154  285   47 3174   25   34   11]
+ [  26   11  140  122  278   98   19 3291   16   22]
+ [ 254  112   98   35   50    7   17   22 3353   49]
+ [ 138  440   59   62   33   23   39   89   92 3003]]
+              precision    recall  f1-score   support
+
+           0       0.73      0.72      0.73      1000
+           1       0.78      0.85      0.81      1000
+           2       0.53      0.58      0.55      1000
+           3       0.53      0.44      0.48      1000
+           4       0.55      0.71      0.62      1000
+           5       0.67      0.51      0.58      1000
+           6       0.77      0.76      0.77      1000
+           7       0.70      0.78      0.74      1000
+           8       0.79      0.82      0.81      1000
+           9       0.84      0.70      0.76      1000
+
+    accuracy                           0.69     10000
+   macro avg       0.69      0.69      0.68     10000
+weighted avg       0.69      0.69      0.68     10000
+
+[[720  19  81  17  21   1   9  14  87  31]
+ [ 22 846   9   4   5   3   9   4  31  67]
+ [ 59   9 577  44 153  44  59  38  15   2]
+ [ 18  15 114 440 126 119  75  61  23   9]
+ [ 25   3  76  38 715  21  33  76  11   2]
+ [ 10   6  82 163  95 507  24  96  12   5]
+ [  5   3  67  57  74  11 764  12   7   0]
+ [ 11   4  45  33  72  41   5 782   2   5]
+ [ 66  40  22   6  12   3   6   9 820  16]
+ [ 44 133  10  22  16   6  11  33  28 697]]

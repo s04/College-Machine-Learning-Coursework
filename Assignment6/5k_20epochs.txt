@@ -1,0 +1,101 @@
+Epoch 1/20
+36/36 [==============================] - 2s 51ms/step - loss: 2.2792 - accuracy: 0.1485 - val_loss: 2.1123 - val_accuracy: 0.2220
+Epoch 2/20
+36/36 [==============================] - 2s 44ms/step - loss: 2.0409 - accuracy: 0.2689 - val_loss: 1.9260 - val_accuracy: 0.3380
+Epoch 3/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.9109 - accuracy: 0.3401 - val_loss: 1.7942 - val_accuracy: 0.3620
+Epoch 4/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.7597 - accuracy: 0.3859 - val_loss: 1.7314 - val_accuracy: 0.3860
+Epoch 5/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.6665 - accuracy: 0.4210 - val_loss: 1.6670 - val_accuracy: 0.4340
+Epoch 6/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.6252 - accuracy: 0.4357 - val_loss: 1.6399 - val_accuracy: 0.4420
+Epoch 7/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.5931 - accuracy: 0.4372 - val_loss: 1.5824 - val_accuracy: 0.4540
+Epoch 8/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.5497 - accuracy: 0.4643 - val_loss: 1.5828 - val_accuracy: 0.4540
+Epoch 9/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.4971 - accuracy: 0.4806 - val_loss: 1.5484 - val_accuracy: 0.4800
+Epoch 10/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.4700 - accuracy: 0.4866 - val_loss: 1.5532 - val_accuracy: 0.4800
+Epoch 11/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.4530 - accuracy: 0.4917 - val_loss: 1.5448 - val_accuracy: 0.4760
+Epoch 12/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.4308 - accuracy: 0.4959 - val_loss: 1.5703 - val_accuracy: 0.4620
+Epoch 13/20
+36/36 [==============================] - 2s 44ms/step - loss: 1.3814 - accuracy: 0.5283 - val_loss: 1.4981 - val_accuracy: 0.4780
+Epoch 14/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.3398 - accuracy: 0.5292 - val_loss: 1.4923 - val_accuracy: 0.5000
+Epoch 15/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.3198 - accuracy: 0.5526 - val_loss: 1.5083 - val_accuracy: 0.4740
+Epoch 16/20
+36/36 [==============================] - 2s 46ms/step - loss: 1.3207 - accuracy: 0.5381 - val_loss: 1.5401 - val_accuracy: 0.4740
+Epoch 17/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.2840 - accuracy: 0.5623 - val_loss: 1.4890 - val_accuracy: 0.5360
+Epoch 18/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.2624 - accuracy: 0.5743 - val_loss: 1.4699 - val_accuracy: 0.5040
+Epoch 19/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.2611 - accuracy: 0.5683 - val_loss: 1.4646 - val_accuracy: 0.5080
+Epoch 20/20
+36/36 [==============================] - 2s 45ms/step - loss: 1.2372 - accuracy: 0.5777 - val_loss: 1.5088 - val_accuracy: 0.4960
+WARNING:tensorflow:From /home/zeno/anaconda3/lib/python3.8/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2020-12-10 13:53:56.742220: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /home/zeno/anaconda3/lib/python3.8/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+              precision    recall  f1-score   support
+
+           0       0.66      0.67      0.67       505
+           1       0.90      0.58      0.71       460
+           2       0.50      0.63      0.56       519
+           3       0.58      0.54      0.56       486
+           4       0.65      0.42      0.51       519
+           5       0.53      0.72      0.61       488
+           6       0.59      0.72      0.65       518
+           7       0.69      0.67      0.68       486
+           8       0.73      0.71      0.72       520
+           9       0.72      0.68      0.70       498
+
+    accuracy                           0.64      4999
+   macro avg       0.65      0.63      0.64      4999
+weighted avg       0.65      0.64      0.64      4999
+
+[[340   3  42  14   9   6   6  14  53  18]
+ [ 18 269   3   3   7   8  29   7  41  75]
+ [ 18   0 329  27  22  50  39  23   9   2]
+ [  7   0  44 263  13  82  49  20   1   7]
+ [ 18   1 100  34 219  48  54  33   8   4]
+ [  7   0  26  36  13 352  37  16   1   0]
+ [  2   1  46  32  26  25 372   6   5   3]
+ [  6   2  29  21  22  55  18 325   3   5]
+ [ 74   5  21   4   5  16   4   3 367  21]
+ [ 26  18  12  16   3  16  26  26  16 339]]
+              precision    recall  f1-score   support
+
+           0       0.54      0.56      0.55      1000
+           1       0.79      0.44      0.57      1000
+           2       0.37      0.47      0.41      1000
+           3       0.34      0.33      0.33      1000
+           4       0.43      0.26      0.32      1000
+           5       0.36      0.50      0.42      1000
+           6       0.48      0.59      0.53      1000
+           7       0.58      0.55      0.57      1000
+           8       0.59      0.64      0.61      1000
+           9       0.59      0.57      0.58      1000
+
+    accuracy                           0.49     10000
+   macro avg       0.51      0.49      0.49     10000
+weighted avg       0.51      0.49      0.49     10000
+
+[[555   8 103  29  20  30  23  22 172  38]
+ [ 77 441  29  23  11  30  48  14 100 227]
+ [ 64   1 465  79  67 134 101  48  26  15]
+ [ 20   1 105 326  42 270 140  66   9  21]
+ [ 48   4 255  72 256 116 133  91  19   6]
+ [ 12   3 105 179  49 496  73  64  15   4]
+ [  6   5 100 120  67  66 589  27  11   9]
+ [ 32   2  52  69  54 163  38 554   8  28]
+ [148  24  30  22  14  33  19  18 640  52]
+ [ 58  69  24  30   9  28  68  56  92 566]]
